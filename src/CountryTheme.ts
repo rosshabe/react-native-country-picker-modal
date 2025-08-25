@@ -7,16 +7,12 @@ export const DEFAULT_THEME = {
     backgroundColor: '#ffffff',
     onBackgroundTextColor: '#000000',
     fontSize: 16,
-    fontFamily: Platform.select({
-        ios: 'System',
-        android: 'Roboto',
-        web: 'Arial'
-    }),
+    fontFamily: 'Geist-Medium',
     filterPlaceholderTextColor: '#aaa',
     activeOpacity: 0.5,
     itemHeight: getHeightPercent(7),
-    flagSize: Platform.select({ android: 20, default: 30 }),
-    flagSizeButton: Platform.select({ android: 20, default: 30 })
+    flagSize: Platform.select({ android: 20, default: 20 }),
+    flagSizeButton: Platform.select({ android: 20, default: 20 })
 };
 export const DARK_THEME = {
     ...DEFAULT_THEME,
